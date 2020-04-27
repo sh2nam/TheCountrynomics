@@ -1,0 +1,69 @@
+{% extends "index.html" %}
+
+<!-- title -->
+{% block title %}
+<title>The Countrynomics</title>
+{% endblock %}
+
+<!-- content -->
+{% block content %}
+  <!-- Banner -->
+    <section id="banner">
+      <div class="inner">
+        <h1>The Countrynomics: <span>Where to begin your macroeconomics research<br/></span></h1>
+        <ul class="actions">
+          <li><a href="{% url 'derivatives:derivatives' %}" class="button alt">Get Started</a></li>
+        </ul>
+      </div>
+    </section>
+
+  <!-- One -->
+    <section id="one">
+      <div class="inner">
+        <header>
+          <h2>About</h2>
+        </header>
+        <p>Welcome to the Countrynomics. The Countrynomics aggregates important economic indicators and provides analytics for G20 countries. Our service is intended for people who are interested in analyzing macroeconomics trend but do not have access to paid service providers. We use freely available data from international organizations such as IMF, OECD, and World Trade Organization.</p>
+        <p>The Countrynomics was launched in September 2019 and it is fairly new. We will be providing more features and data in the near future. Please let us know if you have any suggestions.</p>
+      </div>
+    </section>
+
+  <!-- Two -->
+    <section id="three">
+      <div class="inner">
+        <article>
+          <div class="content">
+            <header>
+              <h3>G20 Dashboard</h3>
+            </header>
+            <p>Keep track of important G20 countries' economic indicators and visualize history of economics in one page</p>
+            <ul class="actions">
+              <li><a href="{% url 'derivatives:derivatives' %}" class="button alt">Learn More</a></li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <div class="content">
+            <header>
+              <h3>Custom Report</h3>
+            </header>
+            <p>Build your own charts to make relationship between indicators or countries and start your analysis</p>
+            <ul class="actions">
+              <li><a href="{% url 'derivatives:custom_data' %}" class="button alt">Learn More</a></li>
+            </ul>
+          </div>
+        </article>
+        <article>
+        <div class="content">
+            <header>
+              <h3>Contact</h3>
+            </header>
+            <p>If you have any questions or suggestions, please feel free to send a message</p>
+            <ul class="actions">
+              <li><a href="{% url 'main:contact' %}" class="button alt">Contact</a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+{% endblock %}

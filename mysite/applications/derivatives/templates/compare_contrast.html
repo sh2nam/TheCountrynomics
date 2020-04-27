@@ -1,0 +1,111 @@
+{% extends "index.html" %}
+
+<!-- title -->
+{% block title %}
+<title>Compare and Contrast</title>
+{% endblock %}
+
+
+{% block content %}
+
+<section id="main" >
+
+	<div class="inner">
+
+		<header class="major special">
+			<header>
+					<h2>Compare and Contrast</h2>
+			</header>
+		</header>
+		<body>
+
+			<form action="{{country}}" method="post" class="form-disable">
+				{% csrf_token %}
+
+				<div class="row">
+					<div class="3u 1u$(xsmall)">
+						<div class="select-wrapper">
+							<select name="country_list_1" id="country_list_1">
+								<option value="None"> - Select Country 1 - </option>
+								{% for country in country_list %}
+									<option value="{{country}}">{{country}}</option>
+								{% endfor %}
+							</select>
+						</div>
+					</div>
+					<div class="5u 1u$(xsmall)">
+						<div class="select-wrapper">
+							<select name="indicator_display_list_1" id="indicator_display_list_1">
+								<option value="None">Indicator1:</option>
+								{% for indicator in indicator_display_list %}
+									<option value="{{indicator}}">{{indicator}}</option>
+								{% endfor %}
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="3u 1u$(xsmall)">
+						<div class="select-wrapper">
+							<select name="country_list_2" id="country_list_2">
+								<option value="None">- Select Country 2 -</option>
+								{% for country in country_list %}
+									<option value="{{country}}">{{country}}</option>
+								{% endfor %}
+							</select>
+						</div>
+					</div>
+					<div class="5u 1u$(xsmall)">
+						<div class="select-wrapper">
+							<select name="indicator_display_list_2" id="indicator_display_list_2">
+								<option value="None">Indicator2:</option>
+								{% for indicator in indicator_display_list %}
+									<option value="{{indicator}}">{{indicator}}</option>
+								{% endfor %}
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="2u 1u$(xsmall)">
+						<div class="select-wrapper">
+							<select name="freq" id="freq">
+								<option value="A">- Frequency -</option>
+									<option value="A">Annual</option>
+									<option value="Q">Quarterly</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="2u 5u(xsmall)">
+						<input type="text" placeholder="Start Year: YYYY" name="start_year" id="start_year"/>
+					</div>
+
+					<div class="2u 5u(xsmall)">
+						<input type="text" placeholder="End Year: YYYY" name="end_year" id="end_year" />
+					</div>
+
+					<div class="3u 8u(xsmall)">
+						<ul class="actions">
+							<li><input href="#" type='submit' value="Run Report" class="button alt"></button></li>
+						</ul>
+					</div>
+				</div>
+			</form>
+
+		</body>
+	</div>
+
+</section>
+
+<section id="main" >
+	<div class="inner">
+		<h6>&nbsp;&nbsp;&nbsp;&nbsp;{{title}}</h6>
+	</div>
+	<script>var custom_data = {{custom_data|safe}};</script>
+	<div id = "custom_data"></div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,438 @@
+indicator_setting:
+  #_________________________________________________________________________________________
+  #
+  # Quandl
+  Real GDP Growth:
+    provider_code: 'ODA'
+    indicator_code: 'NGDP_RPCH'
+    scale: 0.01
+  Real GDP (LCU Bil):
+    provider_code: 'ODA'
+    indicator_code: 'NGDP_R'
+  Real GDP per Capita (LCU):
+    provider_code: 'ODA'
+    indicator_code: 'NGDPRPC'
+  Real GNI (LCU Bil):
+    provider_code: 'WWDI'
+    indicator_code: 'NY_GNP_MKTP_KN'
+    scale: 0.000000001
+  Government Expenditure (% GDP):
+    provider_code: 'ODA'
+    indicator_code: 'GGX_NGDP'
+    scale: 0.01
+  Savings (% GDP):
+    provider_code: 'ODA'
+    indicator_code: 'NGSD_NGDP'
+    scale: 0.01
+  Investment (% GDP):
+    provider_code: 'ODA'
+    indicator_code: 'NID_NGDP'
+    scale: 0.01
+  Net Export (% GDP):
+    provider_code: 'ODA'
+    indicator_code: 'BCA_NGDPD'
+    scale: 0.01
+
+  #_________________________________________________________________________________________
+  #
+  # DBNOMICS
+
+  Goods Trade Balance (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'DOT'
+    indicator_code: 'TBG_USD'
+  Import (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BMGS_BP6_USD'
+  Export (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BXGS_BP6_USD'
+
+# BOP
+  Current Account (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BCA_BP6_USD'
+  Financial Account (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BFFR_BP6_USD'
+  Capital Account (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BK_BP6_USD'
+
+# Current Account Breakdown
+  Goods Net Export (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BG_BP6_USD'
+  Services Net Export (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BS_BP6_USD'
+  Primary Income (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BIP_BP6_USD'
+  Secondary Income (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BIS_BP6_USD'
+
+# Financial Account Breakdown
+  Portfolio Investment (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BFP_BP6_USD'
+  Other Investment (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BFO_BP6_USD'
+  Direct Investment (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BFD_BP6_USD'
+  Reserve Assets (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BFRA_BP6_USD'
+
+  Capital Transfers Net (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BKT_BP6_USD'
+  Foreign Assets (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BKA_BP6_USD'
+
+# Services Net Export Break Down
+  Intellectual Property Charges (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BSORL_BP6_USD'
+  Construction (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BSOCN_BP6_USD'
+  Financial Services (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BSOFI_BP6_USD'
+  Government Goods & Services (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BSOGGS_BP6_USD'
+  Insurance and Pension Services (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BSOIN_BP6_USD'
+  Maintainence and Repair Services (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BSR_BP6_USD'
+  Manufacturing Services (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BSM_BP6_USD'
+  Other Business (Consulting, R&D, etc.) Services (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BSOOB_BP6_USD'
+  Personal, Cultural, and Recreational Services (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BSOPCR_BP6_USD'
+  Telecommunications, Computer, and Info Services (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BSOTCM_BP6_USD'
+  Transport (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BSTR_BP6_USD'
+  Travel (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'BSTV_BP6_USD'
+
+# Goods Net Export Breakdown
+  Automotive products (USD Mil):
+    provider_code: 'WTO'
+    indicator_code: 'WL.MAMTAU'
+  Chemicals (USD Mil):
+    provider_code: 'WTO'
+    indicator_code: 'WL.MACH'
+  Clothing (USD Mil):
+    provider_code: 'WTO'
+    indicator_code: 'WL.MACL'
+  Electronic data processing and office equipment (USD Mil):
+    provider_code: 'WTO'
+    indicator_code: 'WL.MAMTOTEP'
+  Food and Agricultural products (USD Mil):
+    provider_code: 'WTO'
+    indicator_code: 'WL.AGFO'
+  Fuels and mining products (USD Mil):
+    provider_code: 'WTO'
+    indicator_code: 'WL.MI'
+  Integrated circuits and electronic components (USD Mil):
+    provider_code: 'WTO'
+    indicator_code: 'WL.MAMTOTIC'
+  Iron and steel (USD Mil):
+    provider_code: 'WTO'
+    indicator_code: 'WL.MAIS'
+  Machinery and transport equipment (USD Mil):
+    provider_code: 'WTO'
+    indicator_code: 'WL.MAMT'
+  Manufactures (USD Mil):
+    provider_code: 'WTO'
+    indicator_code: 'WL.MA'
+  Office and telecom equipment (USD Mil):
+    provider_code: 'WTO'
+    indicator_code: 'WL.MAMTOF'
+  Pharmaceuticals (USD Mil):
+    provider_code: 'WTO'
+    indicator_code: 'WL.MACHPH'
+  Telecommunications equipment (USD Mil):
+    provider_code: 'WTO'
+    indicator_code: 'WL.MAMTOTTL'
+  Textiles (USD Mil):
+    provider_code: 'WTO'
+    indicator_code: 'WL.MATE'
+
+# Import/Export Price Index
+  Import Price Index:
+    provider_code: 'IMF'
+    source_code: 'IFS'
+    indicator_code: 'PMP_IX'
+  Export Price Index:
+    provider_code: 'IMF'
+    source_code: 'IFS'
+    indicator_code: 'PXP_IX'
+
+# Foreign Direct Investment
+  FDI - Assets (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'IAD_BP6_USD'
+  FDI - Liabilities (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'ILD_BP6_USD'
+
+# Portfolio Investment
+  Portfolio Investment - Assets (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'IAP_BP6_USD'
+  Portfolio Investment - Liabilities (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'ILP_BP6_USD'
+
+# Portfolio Investment Breakdown
+  Assets, Portfolio Investment - Equity (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'IAPE_BP6_USD'
+  Assets, Portfolio Investment - Debt Securities (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'IAPD_BP6_USD'
+  Liabilities, Portfolio Investment - Equity (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'ILPE_BP6_USD'
+  Liabilities, Portfolio Investment - Debt Securities (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'ILPD_BP6_USD'
+
+# Portfolio Investment - Counterparties
+  Counter Party, Assets, Portfolio Investment - Equity (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'CPIS'
+    indicator_code: 'I_A_E_T_T_BP6_USD.T.T'
+  Counter Party, Assets, Portfolio Investment - Debt Securities (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'CPIS'
+    indicator_code: 'I_A_D_T_T_BP6_USD.T.T'
+  Counter Party, Liabilities, Portfolio Investment - Equity (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'CPIS'
+    indicator_code: 'I_L_E_T_T_BP6_DV_USD.T.T'
+  Counter Party, Liabilities, Portfolio Investment - Debt Securities (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'CPIS'
+    indicator_code: 'I_L_D_T_T_BP6_DV_USD.T.T'
+  Counter Party, Assets, Portfolio Investment (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'CPIS'
+    indicator_code: 'I_A_T_T_T_BP6_USD.T.T'
+  Counter Party, Liabilities, Portfolio Investment (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'CPIS'
+    indicator_code: 'I_L_T_T_T_BP6_DV_USD.T.T'
+
+# Reserve Assets Breakdown
+  Assets, Reserve Assets (USD Mil):
+    provider_code: 'IMF'
+    source_code:  'BOP'
+    indicator_code:  'IAR_BP6_USD'
+  Reserve Assets - Monetary Gold (USD Mil):
+    provider_code: 'IMF'
+    source_code:  'BOP'
+    indicator_code:  'IARMG_BP6_USD'
+  Reserve Assets - SDR (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'IARSDR_BP6_USD'
+  Reserve Assets - IMF Reserve (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'IARIMF_BP6_USD'
+  Reserve Assets - Currency, Securities, and Deposits (USD Mil):
+    provider_code: 'IMF'
+    source_code: 'BOP'
+    indicator_code: 'IARO_BP6_USD'
+
+# World Bank Data
+  Population:
+    provider_code: 'WB'
+    source_code: 'WDI'
+    indicator_code: 'SP.POP.TOTL'
+  Labour Force:
+    provider_code: 'WB'
+    source_code: 'WDI'
+    indicator_code: 'SL.TLF.TOTL.IN'
+  Unemployment Rate (% Labour Force):
+    provider_code: 'IMF'
+    source_code: 'IFS'
+    indicator_code: 'LUR_PT'
+    scale: 0.01
+  Real GDP per Capita (USD):
+    provider_code: 'WB'
+    source_code: 'WDI'
+    indicator_code: 'NY.GDP.PCAP.KD'
+  Real GDP (in USD Bil):
+    provider_code: 'WB'
+    source_code: 'WDI'
+    indicator_code: 'NY.GDP.MKTP.KD'
+    scale: 0.000000001
+
+# CPI Data
+  CPI - All Items:
+    provider_code: 'IMF'
+    source_code: 'CPI'
+    indicator_code: 'PCPI_IX'
+  CPI - Clothing:
+    provider_code: 'IMF'
+    source_code: 'CPI'
+    indicator_code: 'PCPIA_IX'
+  CPI - Communication:
+    provider_code: IMF
+    source_code: 'CPI'
+    indicator_code: 'PCPIEC_IX'
+  CPI - Education:
+    provider_code: 'IMF'
+    source_code: 'CPI'
+    indicator_code: 'PCPIED_IX'
+  CPI - Food&Beverages:
+    provider_code: 'IMF'
+    source_code: 'CPI'
+    indicator_code: 'PCPIF_IX'
+  CPI - Furnishings, Household Equipment&Maintenance:
+    provider_code: 'IMF'
+    source_code: 'CPI'
+    indicator_code: 'PCPIHO_IX'
+  CPI - Health:
+    provider_code: 'IMF'
+    source_code: 'CPI'
+    indicator_code: 'PCPIM_IX'
+  CPI - Housing, Water, Gas, Electricity, Fuels:
+    provider_code: 'IMF'
+    source_code: 'CPI'
+    indicator_code: 'PCPIH_IX'
+  CPI - Miscellaneous Goods&Services:
+    provider_code: 'IMF'
+    source_code: 'CPI'
+    indicator_code: 'PCPIO_IX'
+  CPI - Recreation&Culture:
+    provider_code: 'IMF'
+    source_code: 'CPI'
+    indicator_code: 'PCPIR_IX'
+  CPI - Restaurants & Hotels:
+    provider_code: 'IMF'
+    source_code: 'CPI'
+    indicator_code: 'PCPIRE_IX'
+  CPI - Transport:
+    provider_code: 'IMF'
+    source_code: 'CPI'
+    indicator_code: 'PCPIT_IX'
+
+# Rates
+  Monetary Policy Base Rate:
+    provider_code: 'IMF'
+    source_code: 'IFS'
+    indicator_code: 'FPOLM_PA'
+    scale: 0.01
+  10Y Govmt Bond Yield:
+    provider_code: 'OECD'
+    source_code: 'MEI'
+    indicator_code: 'IRLTLT01.ST'
+    scale: 0.01
+  3M Interbank Rates:
+    provider_code: 'OECD'
+    source_code: 'MEI'
+    indicator_code: 'IR3TIB01.ST'
+    scale: 0.01
+
+# Exchange Rate
+  Real Effective Exchange Rate:
+    provider_code: 'IMF'
+    source_code: 'IFS'
+    indicator_code: 'EREER_ULC_IX'
+  Nominal Effective Exchange Rate:
+    provider_code: 'IMF'
+    source_code: 'IFS'
+    indicator_code: 'ENEER_ULC_IX'
+
+# Property Price
+  Property Price Index - Nominal:
+    provider_code: 'BIS'
+    source_code: 'PP-SS'
+    indicator_code: 'N.628'
+  Property Price Index - Real:
+    provider_code: 'BIS'
+    source_code: 'PP-SS'
+    indicator_code: 'R.628'
+
+# Debt Service Ratio:
+  Debt - Non-financial Sector (% GDP):
+    provider_code: 'BIS'
+    source_code: 'CNFS'
+    indicator_code: 'C.A.M.770.A'
+    scale: 0.01
+  Debt - General Government (% GDP):
+    provider_code: 'BIS'
+    source_code: 'CNFS'
+    indicator_code: 'G.A.M.770.A'
+    scale: 0.01
+  Debt - Household & NPISHs (% GDP):
+    provider_code: 'BIS'
+    source_code: 'CNFS'
+    indicator_code: 'H.A.M.770.A'
+    scale: 0.01
+  Debt - Non-financial Corporations (% GDP):
+    provider_code: 'BIS'
+    source_code: 'CNFS'
+    indicator_code: 'N.A.M.770.A'
+    scale: 0.01
+  Debt - Private Non-financial Sector (% GDP):
+    provider_code: 'BIS'
+    source_code: 'CNFS'
+    indicator_code: 'P.A.M.770.A'
+    scale: 0.01

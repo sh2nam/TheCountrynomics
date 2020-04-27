@@ -1,0 +1,58 @@
+{% extends "index.html" %}
+
+<!-- title -->
+{% block title %}
+<title>Custom Data</title>
+{% endblock %}
+
+
+{% block content %}
+
+<section id="main" >
+
+	<div class="inner">
+
+		<header class="major special">
+			<header>
+        <h2>Customized Reports: </h2>
+      </header>
+
+		</header>
+
+		<section>
+			<h3>Compare & Contrast</h3>
+			<p>Select any timeseries data to visualize in a line chart. Users may compare two different economic indicators for one country to find cause and effect relationship or make a comparison between two countries for a selected indicator.</p>
+			<ul class="actions">
+				<li><a href="{% url 'derivatives:compare_contrast' %}" class="button alt">Learn More</a></li>
+			</ul>
+			<hr />
+
+			<h3>GDP per Capita Comparison</h3>
+			<p>Select an economic indicator to visualize in a scatter plot and understand G20 countries' economy with respect to GDP per Capita. An interesting example to see is how Household Debt to GDP increases as GDP per Capita increases.</p>
+			<ul class="actions">
+				<li><a href="{% url 'derivatives:gdp_per_cap_report' %}" class="button alt">Learn More</a></li>
+			</ul>
+			<hr />
+
+			<h3>Trade Data Dashboard</h3>
+			<p>This page is currently under development. Sorry for your inconvenience.</p>
+			<ul class="actions">
+				<li><a href="" class="button alt">Learn More</a></li>
+			</ul>
+			<hr />
+
+			<h3>Investment Data Dashboard</h3>
+			<p>This page is currently under development. Sorry for your inconvenience.</p>
+			<ul class="actions">
+				<li><a href="" class="button alt">Learn More</a></li>
+			</ul>
+			<hr />
+
+		</section>
+
+
+	</div>
+	<br>
+	<br>
+</section>
+{% endblock %}

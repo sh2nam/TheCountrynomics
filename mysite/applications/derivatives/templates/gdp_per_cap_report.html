@@ -1,0 +1,65 @@
+{% extends "index.html" %}
+
+<!-- title -->
+{% block title %}
+<title>Comparison by GDP per Capita</title>
+{% endblock %}
+
+
+{% block content %}
+
+<section id="main" >
+
+	<div class="inner">
+
+		<header class="major special">
+			<header>
+					<h2>Comparison by GDP per Capita Chart:</h2>
+			</header>
+		</header>
+		<body>
+
+			<form action="{{country}}" method="post" class="form-disable">
+				{% csrf_token %}
+
+				<div class="row">
+
+					<div class="4u 1u$(xsmall)">
+						<div class="select-wrapper">
+							<select name="indicator_display_list" id="indicator_display_list">
+								<option value="None">Select an Indicator</option>
+								{% for indicator in indicator_display_list %}
+									<option value="{{indicator}}">{{indicator}}</option>
+								{% endfor %}
+							</select>
+						</div>
+					</div>
+
+					<div class="3u 1u(xsmall)">
+						<input type="text" placeholder="Year: YYYY" name="date" id="date"/>
+					</div>
+
+					<div class="3u 8u(xsmall)">
+						<ul class="actions">
+							<li><input href="#" type='submit' value="Run Report" class="button alt"></button></li>
+						</ul>
+					</div>
+				</div>
+			</form>
+
+		</body>
+	</div>
+
+</section>
+
+
+<section id="main" >
+	<div class="inner">
+		<h6>{{title}}</h6>
+	</div>
+	<script>var gdp_comp_data = {{gdp_comp_data|safe}};</script>
+	<div id = "gdp_comp_data"></div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+
+<!-- title -->
+{% block title %}
+<title>Contact</title>
+{% endblock %}
+
+{% block content %}
+<section id="main" >
+	<div class="inner">
+		<header class="major special">
+
+      <header>
+        <h2>Get in touch</h2>
+      </header>
+
+      <form method="post" action="#">
+				{% csrf_token %}
+				{{ form.as_p }}
+				<div class="fomr-actions">
+					<button type="submit" name="submit_contact" class='alt'>Send Message</button>
+				</div>
+
+      </form>
+		</header>
+
+	</div>
+</section>
+{% endblock %}

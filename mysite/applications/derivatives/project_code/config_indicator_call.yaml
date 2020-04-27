@@ -1,0 +1,103 @@
+Single Time Series Setup:
+  Real GDP (LCU Bil): {'Function Name': 'get_real_gdp_number_lcu', 'Frequency Fix':  'A'}
+  Unemployment Rate (% Labour Force): {'Function Name': 'get_unemployment_rate', 'Country Exception': ['India']}
+  Population: {'Function Name': 'get_population_number'}
+  Labour Force: {'Function Name': 'get_labour_force_number'}
+  Real GDP Growth: {'Function Name': 'get_real_gdp_growth', 'Frequency Fix':  'A'}
+  Investment (% GDP): {'Function Name': 'get_investment_gdp', 'Frequency Fix':  'A'}
+  Net Export (% GDP): {'Function Name': 'get_net_export_gdp', 'Frequency Fix':  'A'}
+  Current Account (USD Mil): {'Function Name': 'get_bop_current_account'}
+  Intellectual Property Charges (USD Mil): {'Function Name': 'get_bop_services_net_export_breakdown', 'Prefix': 'BOP'}
+  Construction (USD Mil): {'Function Name': 'get_bop_services_net_export_breakdown', 'Prefix': 'BOP'}
+  Financial Services (USD Mil): {'Function Name': 'get_bop_services_net_export_breakdown', 'Prefix': 'BOP'}
+  Government Goods & Services (USD Mil): {'Function Name': 'get_bop_services_net_export_breakdown', 'Prefix': 'BOP'}
+  Insurance and Pension Services (USD Mil): {'Function Name': 'get_bop_services_net_export_breakdown', 'Prefix': 'BOP'}
+  Maintainence and Repair Services (USD Mil): {'Function Name': 'get_bop_services_net_export_breakdown', 'Prefix': 'BOP'}
+  Manufacturing Services (USD Mil): {'Function Name': 'get_bop_services_net_export_breakdown', 'Prefix': 'BOP'}
+  Other Business (Consulting, R&D, etc.) Services (USD Mil): {'Function Name': 'get_bop_services_net_export_breakdown', 'Prefix': 'BOP'}
+  Personal, Cultural, and Recreational Services (USD Mil): {'Function Name': 'get_bop_services_net_export_breakdown', 'Prefix': 'BOP'}
+  Telecommunications, Computer, and Info Services (USD Mil): {'Function Name': 'get_bop_services_net_export_breakdown', 'Prefix': 'BOP'}
+  Transport (USD Mil): {'Function Name': 'get_bop_services_net_export_breakdown', 'Prefix': 'BOP'}
+  Travel (USD Mil): {'Function Name': 'get_bop_services_net_export_breakdown', 'Prefix': 'BOP'}
+  Financial Account (USD Mil): {'Function Name': 'get_bop_financial_account', 'Prefix': 'BOP'}
+  Portfolio Investment (USD Mil): {'Function Name': 'get_bop_portfolio_investment', 'Prefix': 'BOP'}
+  Other Investment (USD Mil): {'Function Name': 'get_bop_other_investment', 'Prefix': 'BOP'}
+  Direct Investment (USD Mil): {'Function Name': 'get_bop_direct_investment', 'Prefix': 'BOP'}
+  Reserve Assets (USD Mil): {'Function Name': 'get_bop_reserve_assets', 'Prefix': 'BOP'}
+  Capital Account (USD Mil): {'Function Name': 'get_bop_capital_account', 'Prefix': 'BOP'}
+  Primary Income (USD Mil): {'Function Name': 'get_bop_primary_income', 'Prefix': 'BOP'}
+  Secondary Income (USD Mil): {'Function Name': 'get_bop_secondary_income', 'Prefix': 'BOP'}
+  Goods Net Export (USD Mil): {'Function Name': 'get_bop_goods_net_export', 'Prefix': 'BOP'}
+  Services Net Export (USD Mil): {'Function Name': 'get_bop_services_net_export', 'Prefix': 'BOP'}
+  Import (USD Mil): {'Function Name': 'get_bop_import', 'Prefix': 'BOP'}
+  Export (USD Mil): {'Function Name': 'get_bop_export', 'Prefix': 'BOP'}
+  Import Price Index: {'Function Name': 'get_ifs_import_price_index', 'Country Exception': ['Argentina', 'China', 'India', 'Italy', 'Russia', 'Saudi Arabia', 'Turkey']}
+  Export Price Index: {'Function Name': 'get_ifs_export_price_index', 'Country Exception': ['Argentina', 'China', 'India', 'Italy', 'Russia', 'Saudi Arabia', 'Turkey']}
+  FDI - Assets (USD Mil): {'Function Name': 'get_bop_direct_investment_assets', 'Prefix': 'BOP'}
+  FDI - Liabilities (USD Mil): {'Function Name': 'get_bop_direct_investment_liabilities', 'Prefix': 'BOP'}
+  Assets, Portfolio Investment - Equity (USD Mil): {'Function Name': 'get_bop_portfolio_investment_assets_eq', 'Prefix': 'BOP'}
+  Assets, Portfolio Investment - Debt Securities (USD Mil): {'Function Name': 'get_bop_portfolio_investment_assets_debt', 'Prefix': 'BOP'}
+  Liabilities, Portfolio Investment - Equity (USD Mil): {'Function Name': 'get_bop_portfolio_investment_liabilities_eq', 'Prefix': 'BOP'}
+  Liabilities, Portfolio Investment - Debt Securities (USD Mil): {'Function Name': 'get_bop_portfolio_investment_liabilities_debt', 'Prefix': 'BOP'}
+  Assets, Reserve Assets (USD Mil): {'Function Name': 'get_bop_reserve_assets_total', 'Prefix': 'BOP'}
+  Reserve Assets - Monetary Gold (USD Mil): {'Function Name': 'get_bop_reserve_assets_gold', 'Prefix': 'BOP'}
+  Reserve Assets - SDR (USD Mil): {'Function Name': 'get_bop_reserve_assets_sdr', 'Prefix': 'BOP'}
+  Reserve Assets - IMF Reserve (USD Mil): {'Function Name': 'get_bop_reserve_assets_imf', 'Prefix': 'BOP'}
+  Reserve Assets - Currency, Securities, and Deposits (USD Mil): {'Function Name': 'get_bop_reserve_assets_currency_securities', 'Prefix': 'BOP'}
+  CPI - All Items: {'Function Name': 'get_cpi_all_items'}
+  Portfolio Investment - Assets (USD Mil): {'Function Name': 'get_bop_portfolio_investment_assets', 'Prefix': 'BOP'}
+  Portfolio Investment - Liabilities (USD Mil): {'Function Name': 'get_bop_portfolio_investment_liabilities', 'Prefix': 'BOP'}
+  10Y Govmt Bond Yield: {'Function Name': 'get_oecd_10y_govmt_bond_yield', 'Country Exception': ['Argentina', 'Brazil', 'China', 'Indonesia', 'Saudi Arabia', 'Turkey'], 'Frequency Fix':  'M', 'Prefix': 'Yield'}
+  3M Interbank Rates: {'Function Name': 'get_oecd_3M_interbank_rates', 'Country Exception': ['Argentina', 'Brazil', 'China', 'Indonesia', 'Saudi Arabia', 'Turkey'], 'Frequency Fix':  'M', 'Prefix': 'Yield'}
+  Nominal Effective Exchange Rate: {'Function Name': 'get_nominal_exchange_rate', 'Country Exception': ['Argentina', 'Brazil', 'China', 'India', 'Indonesia', 'Mexico', 'Russia', 'Saudi Arabia', 'South Africa', 'Turkey'], 'Frequency Fix':  'M', 'Prefix': 'FX'}
+  Real Effective Exchange Rate: {'Function Name': 'get_real_exchange_rate', 'Country Exception': ['Argentina', 'Brazil', 'China', 'India', 'Indonesia', 'Mexico', 'Russia', 'Saudi Arabia', 'South Africa', 'Turkey'], 'Frequency Fix':  'M', 'Prefix': 'FX'}
+  Goods Import - Automotive products (USD Mil): {'Function Name': 'get_wto_goods_import_breakdown', 'Original Indicator Name': 'Automotive products (USD Mil)', 'Flow': 'M'}
+  Goods Import - Chemicals (USD Mil): {'Function Name': 'get_wto_goods_import_breakdown', 'Original Indicator Name': 'Chemicals (USD Mil)', 'Flow': 'M'}
+  Goods Import - Clothing (USD Mil): {'Function Name': 'get_wto_goods_import_breakdown', 'Original Indicator Name': 'Clothing (USD Mil)', 'Flow': 'M'}
+  Goods Import - Electronic data processing and office equipment (USD Mil): {'Function Name': 'get_wto_goods_import_breakdown', 'Original Indicator Name': 'Electronic data processing and office equipment (USD Mil)', 'Flow': 'M'}
+  Goods Import - Food and Agricultural products (USD Mil): {'Function Name': 'get_wto_goods_import_breakdown', 'Original Indicator Name': 'Food and Agricultural products (USD Mil)', 'Flow': 'M'}
+  Goods Import - Fuels and mining products (USD Mil): {'Function Name': 'get_wto_goods_import_breakdown', 'Original Indicator Name': 'Fuels and mining products (USD Mil)', 'Flow': 'M'}
+  Goods Import - Integrated circuits and electronic components (USD Mil): {'Function Name': 'get_wto_goods_import_breakdown', 'Original Indicator Name': 'Integrated circuits and electronic components (USD Mil)', 'Flow': 'M'}
+  Goods Import - Iron and steel (USD Mil): {'Function Name': 'get_wto_goods_import_breakdown', 'Original Indicator Name': 'Iron and steel (USD Mil)', 'Flow': 'M'}
+  Goods Import - Machinery and transport equipment (USD Mil): {'Function Name': 'get_wto_goods_import_breakdown', 'Original Indicator Name': 'Machinery and transport equipment (USD Mil)', 'Flow': 'M'}
+  Goods Import - Manufactures (USD Mil): {'Function Name': 'get_wto_goods_import_breakdown', 'Original Indicator Name': 'Manufactures (USD Mil)', 'Flow': 'M'}
+  Goods Import - Office and telecom equipment (USD Mil): {'Function Name': 'get_wto_goods_import_breakdown', 'Original Indicator Name': 'Office and telecom equipment (USD Mil)', 'Flow': 'M'}
+  Goods Import - Pharmaceuticals (USD Mil): {'Function Name': 'get_wto_goods_import_breakdown', 'Original Indicator Name': 'Pharmaceuticals (USD Mil)', 'Flow': 'M'}
+  Goods Import - Telecommunications equipment (USD Mil): {'Function Name': 'get_wto_goods_import_breakdown', 'Original Indicator Name': 'Telecommunications equipment (USD Mil)', 'Flow': 'M'}
+  Goods Import - Textiles (USD Mil): {'Function Name': 'get_wto_goods_import_breakdown', 'Original Indicator Name': 'Textiles (USD Mil)', 'Flow': 'M'}
+  Goods Export - Automotive products (USD Mil): {'Function Name': 'get_wto_goods_export_breakdown', 'Original Indicator Name': 'Automotive products (USD Mil)', 'Flow': 'X'}
+  Goods Export - Chemicals (USD Mil): {'Function Name': 'get_wto_goods_export_breakdown', 'Original Indicator Name': 'Chemicals (USD Mil)', 'Flow': 'X'}
+  Goods Export - Clothing (USD Mil): {'Function Name': 'get_wto_goods_export_breakdown', 'Original Indicator Name': 'Clothing (USD Mil)', 'Flow': 'X'}
+  Goods Export - Electronic data processing and office equipment (USD Mil): {'Function Name': 'get_wto_goods_export_breakdown', 'Original Indicator Name': 'Electronic data processing and office equipment (USD Mil)', 'Flow': 'X'}
+  Goods Export - Food and Agricultural products (USD Mil): {'Function Name': 'get_wto_goods_export_breakdown', 'Original Indicator Name': 'Food and Agricultural products (USD Mil)', 'Flow': 'X'}
+  Goods Export - Fuels and mining products (USD Mil): {'Function Name': 'get_wto_goods_export_breakdown', 'Original Indicator Name': 'Fuels and mining products (USD Mil)', 'Flow': 'X'}
+  Goods Export - Integrated circuits and electronic components (USD Mil): {'Function Name': 'get_wto_goods_export_breakdown', 'Original Indicator Name': 'Integrated circuits and electronic components (USD Mil)', 'Flow': 'X'}
+  Goods Export - Iron and steel (USD Mil): {'Function Name': 'get_wto_goods_export_breakdown', 'Original Indicator Name': 'Iron and steel (USD Mil)', 'Flow': 'X'}
+  Goods Export - Machinery and transport equipment (USD Mil): {'Function Name': 'get_wto_goods_export_breakdown', 'Original Indicator Name': 'Machinery and transport equipment (USD Mil)', 'Flow': 'X'}
+  Goods Export - Manufactures (USD Mil): {'Function Name': 'get_wto_goods_export_breakdown', 'Original Indicator Name': 'Manufactures (USD Mil)', 'Flow': 'X'}
+  Goods Export - Office and telecom equipment (USD Mil): {'Function Name': 'get_wto_goods_export_breakdown', 'Original Indicator Name': 'Office and telecom equipment (USD Mil)', 'Flow': 'X'}
+  Goods Export - Pharmaceuticals (USD Mil): {'Function Name': 'get_wto_goods_export_breakdown', 'Original Indicator Name': 'Pharmaceuticals (USD Mil)', 'Flow': 'X'}
+  Goods Export - Telecommunications equipment (USD Mil): {'Function Name': 'get_wto_goods_export_breakdown', 'Original Indicator Name': 'Telecommunications equipment (USD Mil)', 'Flow': 'X'}
+  Goods Export - Textiles (USD Mil): {'Function Name': 'get_wto_goods_export_breakdown', 'Original Indicator Name': 'Textiles (USD Mil)', 'Flow': 'X'}
+  CPI - Clothing: {'Function Name': 'get_cpi_basket_items', 'Country Exception': ['Indonesia', 'China', 'Brazil'], 'Frequency Fix':  'A'}
+  CPI - Communication: {'Function Name': 'get_cpi_basket_items', 'Country Exception': ['Indonesia', 'China', 'Brazil'], 'Frequency Fix':  'A'}
+  CPI - Education: {'Function Name': 'get_cpi_basket_items', 'Country Exception': ['Indonesia', 'China', 'Brazil'], 'Frequency Fix':  'A'}
+  CPI - Food&Beverages: {'Function Name': 'get_cpi_basket_items', 'Country Exception': ['Indonesia', 'China', 'Brazil'], 'Frequency Fix':  'A'}
+  CPI - Furnishings, Household Equipment&Maintenance: {'Function Name': 'get_cpi_basket_items', 'Country Exception': ['Indonesia', 'China', 'Brazil'], 'Frequency Fix':  'A'}
+  CPI - Health: {'Function Name': 'get_cpi_basket_items', 'Country Exception': ['Indonesia', 'China', 'Brazil'], 'Frequency Fix':  'A'}
+  CPI - Housing, Water, Gas, Electricity, Fuels: {'Function Name': 'get_cpi_basket_items', 'Country Exception': ['Indonesia', 'China', 'Brazil'], 'Frequency Fix':  'A'}
+  CPI - Miscellaneous Goods&Services: {'Function Name': 'get_cpi_basket_items', 'Country Exception': ['Indonesia', 'China', 'Brazil'], 'Frequency Fix':  'A'}
+  CPI - Recreation&Culture: {'Function Name': 'get_cpi_basket_items', 'Country Exception': ['Indonesia', 'China', 'Brazil'], 'Frequency Fix':  'A'}
+  CPI - Restaurants & Hotels: {'Function Name': 'get_cpi_basket_items', 'Country Exception': ['Indonesia', 'China', 'Brazil'], 'Frequency Fix':  'A'}
+  CPI - Transport: {'Function Name': 'get_cpi_basket_items', 'Country Exception': ['Indonesia', 'China', 'Brazil'], 'Frequency Fix':  'A'}
+  Savings (% GDP): {'Function Name': 'get_savings_gdp', 'Frequency Fix':  'A'}
+  Government Expenditure (% GDP): {'Function Name': 'get_govmt_expenditure_gdp', 'Frequency Fix':  'A'}
+  Property Price Index - Nominal: {'Function Name': 'get_bis_property_price_nominal', 'Country Exception': ['Argentina', 'Saudi Arabia'], 'Frequency Fix':  'Q'}
+  Property Price Index - Real: {'Function Name': 'get_bis_property_price_real', 'Country Exception': ['Argentina', 'Saudi Arabia'], 'Frequency Fix':  'Q'}
+  Debt - Non-financial Sector (% GDP): {'Function Name': 'get_bis_debt_ratio_nonfinancial', 'Frequency Fix':  'Q'}
+  Debt - General Government (% GDP): {'Function Name': 'get_bis_debt_ratio_generalgovmt', 'Country Exception': ['Argentina', 'Brazil', 'China', 'India', 'Indonesia', 'Mexico', 'Russia', 'Saudi Arabia', 'South Africa'], 'Frequency Fix':  'Q'}
+  Debt - Household & NPISHs (% GDP): {'Function Name': 'get_bis_debt_ratio_householdNPISHs', 'Frequency Fix':  'Q'}
+  Debt - Non-financial Corporations (% GDP): {'Function Name': 'get_bis_debt_ratio_nonfinancialcorp', 'Frequency Fix':  'Q'}
+  Debt - Private Non-financial Sector (% GDP): {'Function Name': 'get_bis_debt_ratio_privnonfinancialsec', 'Frequency Fix':  'Q'}
+  Real GDP per Capita (USD): {'Function Name': 'get_real_gdp_per_cap_usd', 'Frequency Fix':  'A'}
+  Real GDP (in USD Bil): {'Function Name': 'get_real_gdp_usd_bil', 'Frequency Fix':  'A'}

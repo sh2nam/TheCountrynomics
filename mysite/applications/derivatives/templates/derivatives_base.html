@@ -1,0 +1,265 @@
+{% extends "index.html" %}
+
+<!-- title -->
+{% block title %}
+<title>G20 Dashboard</title>
+{% endblock %}
+
+
+{% block content %}
+
+<section id="main" >
+
+	<div class="inner">
+
+		<header class="major special">
+			<header>
+					<h2>G20 Countries Economic Indicators</h2>
+			</header>
+			<p>Note: Please select a country and click 'Run Report'. It should take about 10 seconds to load.</p>
+		</header>
+
+		<body>
+
+			<form action="{{country}}" method="post" class="form-disable">
+				{% csrf_token %}
+
+				<div class="row">
+
+					<div class="3u 1u$(xsmall)">
+						<div class="select-wrapper">
+							<select name="country_list" id="country_list">
+								<option value="United States">- Please Select a Country -</option>
+								{% for country in country_list %}
+									<option value="{{country}}">{{country}}</option>
+								{% endfor %}
+							</select>
+						</div>
+					</div>
+
+					<div class="2u 1u$(xsmall)">
+						<div class="select-wrapper">
+							<select name="freq" id="freq">
+								<option value="A">- Frequency -</option>
+									<option value="A">Annual</option>
+									<option value="Q">Quarterly</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="2u 5u(xsmall)">
+						<input type="text" placeholder="Start Year (YYYY)" name="start_year" id="start_year"/>
+					</div>
+
+					<div class="2u 5u(xsmall)">
+						<input type="text" placeholder="End Year (YYYY)" name="end_year" id="end_year" />
+					</div>
+
+					<div class="3u 8u(xsmall)">
+						<ul class="actions">
+							<li><input href="#" type='submit' value="Run Report" class="button alt"></button></li>
+						</ul>
+					</div>
+				</div>
+			</form>
+
+
+		</body>
+	</div>
+
+</section>
+
+
+<section id="four">
+	
+
+	<div class="inner">
+		<div class="content">
+			<div class="5u">
+				<script>var real_gdp_data = {{real_gdp.data|safe}};</script>
+				<div id = "real_gdp"></div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="5u">
+				<script>var gdp_growth_contribution_data = {{real_gdp_growth_contribution.data|safe}};</script>
+				<div id = "real_gdp_breakdown"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="inner">
+		<div class="content">
+			<div class="5u">
+				<script>var cpi_growth_data = {{cpi_growth.data|safe}};</script>
+				<div id = "cpi_growth"></div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="5u">
+				<script>var cpi_basket_items_growth_data = {{cpi_basket_items_growth.data|safe}};</script>
+				<div id = "cpi_basket_items_growth"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="inner">
+		<div class="content">
+			<div class="5u">
+				<script>var population_labour_force_data = {{population_labour_force.data|safe}};</script>
+				<div id = "population_labour_force"></div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="5u">
+				<script>var population_labour_force_growth_data = {{population_labour_force_growth.data|safe}};</script>
+				<div id = "population_labour_force_growth"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="inner">
+		<div class="content">
+			<div class="5u">
+				<script>var unemployment_rate_data = {{unemployment_rate.data|safe}};</script>
+				<div id = "unemployment_rate"></div>
+			</div>
+		</div>
+		<div class="content">
+		</div>
+	</div>
+
+	<div class="inner">
+		<div class="content">
+			<div class="5u">
+				<script>var bop_info_data = {{bop_info.data|safe}};</script>
+				<div id = "bop_info"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="inner">
+		<div class="content">
+			<div class="5u">
+				<script>var curr_acc_breakdown_data = {{curr_acc_breakdown.data|safe}};</script>
+				<div id = "curr_acc_breakdown"></div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="5u">
+				<script>var fin_acc_breakdown_data = {{fin_acc_breakdown.data|safe}};</script>
+				<div id = "fin_acc_breakdown"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="inner">
+		<div class="content">
+			<div class="5u">
+				<script>var trade_bal_data = {{trade_bal.data|safe}};</script>
+				<div id = "trade_bal"></div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="5u">
+				<script>var trade_bal_g20_data = {{trade_bal_g20countries.data|safe}};</script>
+				<div id = "trade_bal_g20"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="inner">
+		<div class="content">
+			<div class="5u">
+				<script>var serv_net_exp_breakdown_data = {{serv_net_exp_breakdown.data|safe}};</script>
+				<div id = "serv_net_exp_breakdown"></div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="5u">
+				<script>var good_net_exp_breakdown_data = {{good_net_exp_breakdown.data|safe}};</script>
+				<div id = "good_net_exp_breakdown"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="inner">
+		<div class="content">
+			<div class="5u">
+				<script>var trade_price_index_data = {{trade_price_index.data|safe}};</script>
+				<div id = "trade_price_index"></div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="5u">
+				<script>var effective_exchange_rates_data = {{effective_exchange_rates.data|safe}};</script>
+				<div id = "effective_exchange_rates"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="inner">
+		<div class="content">
+			<div class="5u">
+				<script>var fdi_asset_liability_data = {{fdi_assets_liabilities.data|safe}};</script>
+				<div id = "fdi_asset_liability"></div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="5u">
+				<script>var portfolio_asset_liability_data = {{portfolio_assets_liabilities.data|safe}};</script>
+				<div id = "portfolio_asset_liability"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="inner">
+		<div class="content">
+			<div class="5u">
+				<script>var portfolio_assets_minus_liabilities_data = {{portfolio_assets_minus_liabilities.data|safe}};</script>
+				<div id = "portfolio_assets_minus_liabilities"></div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="5u">
+				<script>var portfolio_inv_CP_data = {{portfolio_inv_CP.data|safe}};</script>
+				<div id = "portfolio_inv_CP"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="inner">
+		<div class="content">
+			<div class="5u">
+				<script>var reserve_assets_breakdown_data = {{reserve_assets_breakdown.data|safe}};</script>
+				<div id = "reserve_assets_breakdown"></div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="5u">
+				<script>var oecd_ten_y_three_m_yield_data = {{oecd_ten_y_three_m_yield.data|safe}};</script>
+				<div id = "oecd_ten_y_three_m_yield"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="inner">
+		<div class="content">
+			<div class="5u">
+				<script>var porperty_index_data = {{porperty_index.data|safe}};</script>
+				<div id = "porperty_index"></div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="5u">
+				<script>var debt_ratio_data = {{debt_ratio.data|safe}};</script>
+				<div id = "debt_ratio"></div>
+			</div>
+		</div>
+	</div>
+
+
+</section>
+
+
+{% endblock %}

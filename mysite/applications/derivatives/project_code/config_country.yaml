@@ -1,0 +1,71 @@
+g20_country_list: ['Argentina', 'Australia', 'Brazil', 'Canada', 'China', 'France', 'Germany', 'India',
+                   'Indonesia', 'Italy', 'Japan', 'Mexico', 'Russia', 'Saudi Arabia', 'South Africa', 'South Korea',
+                   'Turkey', 'United Kingdom', 'United States']
+
+country_code:
+  Argentina:
+    two_letter: 'AR'
+    three_letter: 'ARG'
+  Australia:
+    two_letter: 'AU'
+    three_letter: 'AUS'
+  Brazil:
+    two_letter: 'BR'
+    three_letter: 'BRA'
+  Canada:
+    two_letter: 'CA'
+    three_letter: 'CAN'
+  China:
+    two_letter: 'CN'
+    three_letter: 'CHN'
+  France:
+    two_letter: 'FR'
+    three_letter: 'FRA'
+  Germany:
+    two_letter: 'DE'
+    three_letter: 'DEU'
+  India:
+    two_letter: 'IN'
+    three_letter: 'IND'
+  Indonesia:
+    two_letter: 'ID'
+    three_letter: 'IDN'
+  Italy:
+    two_letter: 'IT'
+    three_letter: 'ITA'
+  Japan:
+    two_letter: 'JP'
+    three_letter: 'JPN'
+  Mexico:
+    two_letter: 'MX'
+    three_letter: 'MEX'
+  Russia:
+    two_letter: 'RU'
+    three_letter: 'RUS'
+  Saudi Arabia:
+    two_letter: 'SA'
+    three_letter: 'SAU'
+  South Africa:
+    two_letter: 'ZA'
+    three_letter: 'ZAF'
+  South Korea:
+    two_letter: 'KR'
+    three_letter: 'KOR'
+  Turkey:
+    two_letter: 'TR'
+    three_letter: 'TUR'
+  United Kingdom:
+    two_letter: 'GB'
+    three_letter: 'GBR'
+  United States:
+    two_letter: 'US'
+    three_letter: 'USA'
+
+source_country_code_mapping:
+  IMF: 'two_letter'
+  WTO: 'two_letter'
+  WB: 'two_letter'
+  OECD: 'three_letter'
+  ODA: 'three_letter'
+  WWDI: 'three_letter'
+  BIS: 'two_letter'

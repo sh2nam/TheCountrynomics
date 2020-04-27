@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+	<head>
+		<!-- CSS File -->
+		{% load static %}
+		<link href = "{% static 'css/main.css'%}" rel="stylesheet">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!-- title -->
+		{% block title %}
+		{% endblock %}
+
+	</head>
+	<body>
+		<!-- Nav Bar -->
+			{% include 'include/nav.html' %}
+
+		<!-- Content -->
+			{% block content %}
+			{% endblock %}
+
+		<!-- Footer -->
+			<br><br>
+			{% include 'include/footer.html' %}
+
+		<!-- Scripts -->
+			<script type = 'text/javascript' src={% static "js/jquery.min.js" %}></script>
+			<script type = 'text/javascript' src={% static "js/skel.min.js" %}></script>
+			<script type = 'text/javascript' src={% static "js/util.js" %}></script>
+			<script type = 'text/javascript' src={% static "js/main.js" %}></script>
+
+			<!-- Google charts -->
+			<script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js"></script>
+			<script type = "text/javascript" src="{% static 'js/graph.js' %}"></script>
+
+			<!-- Disable Button -->
+			<script type = "text/javascript" src="{% static 'js/button.js' %}"></script>
+	</body>
+</html>
