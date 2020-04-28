@@ -5,8 +5,7 @@ The Countrynomics is a website providing analytics of economic indicators for G2
 ______________________________________________________________________________________________________________________________________
 
 [API Query from DBnomics and Quandl](https://github.com/sh2nam/TheCountrynomics/blob/master/mysite/applications/derivatives/project_code/Downlaod_Dbnomics_API_Data.py)
-
-Input country name, indicator name, start date, and end date to query economic indicator from [DBnomics](https://db.nomics.world/) or [Quandl](https://www.quandl.com/). For the names of countries and indicators refer to the below config files.
+This class allows users to input country name, indicator name, start date, and end date to query economic indicator through an API call from [DBnomics](https://db.nomics.world/) or [Quandl](https://www.quandl.com/). For the names of countries and indicators refer to the below config files.
 
 
 
