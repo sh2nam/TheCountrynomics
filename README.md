@@ -1,5 +1,5 @@
 # TheCountrynomics
-Please click the link to access the final production: http://www.thecountrynomics.com/
+Please click the link to access the final production: http://countrynomics.pythonanywhere.com/
 
 The Countrynomics is a website providing analytics of economic indicators for G20 countries. The economic indicators are queried from international organizations such as IMF, OECD, and World Trade Organization.
 
